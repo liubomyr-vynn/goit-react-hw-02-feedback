@@ -33,23 +33,14 @@ class App extends Component {
     } = this;
 
     return (
-      <div
-        className="container"
-        // style={{
-        //   height: '100vh',
-        //   display: 'flex',
-        //   flexDirection: 'column',
-        //   justifyContent: 'center',
-        //   alignItems: 'center',
-        //   fontSize: 30,
-        //   color: '#010101',
-        // }}
-      >
+      <div className="container">
         <Section title="Please leave feedback">
           <FeedbackOptions
             options={Object.keys(state)}
             onLeaveFeedback={handleAddFeedback}
           />
+        </Section>
+        <Section title="Statistics">
           <Statistics
             good={good}
             neutral={neutral}
