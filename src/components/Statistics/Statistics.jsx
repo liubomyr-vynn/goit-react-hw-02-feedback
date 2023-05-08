@@ -4,7 +4,6 @@ import PropTypes from 'prop-types';
 const Statistics = ({ good, neutral, bad, total, positivePercentage }) => {
   return (
     <div className="statistics">
-      <h2 className="statistics__title title">Statistics</h2>
       {total() > 0 ? (
         <ul className="statistics__list">
           <li>Good: {good}</li>
